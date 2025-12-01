@@ -67,7 +67,7 @@ All bookings, seats, movies, and payments are stored in the database.
 
 ▶️ How to Run the Project
 1️⃣ Clone the project
-git clone https://github.com/yourusername/movie-theater-booking-system.git
+git clone https://github.com/UttamJangid01/Movie-Theater.git
 
 2️⃣ Open in IntelliJ / VS Code / Eclipse
 3️⃣ Setup MySQL database
@@ -79,7 +79,7 @@ CREATE DATABASE theater;
 
 Configure in application.properties:
 
-spring.datasource.url=jdbc:mysql://localhost:3306/theater
+spring.datasource.url=jdbc:mysql://localhost:3306/Movietheater
 spring.datasource.username=root
 spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
