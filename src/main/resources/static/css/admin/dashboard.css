@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d1b2a; /* Dark background */
+    margin: 0;
+    padding: 0;
+    color: #e0e1dd;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.form-card {
+    background-color: #1b263b; /* Dark card */
+    width: 380px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+label {
+    font-size: 14px;
+    color: #a5a8aa;
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #415a77;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #0d1b2a;
+    color: #e0e1dd;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #a5a8aa;
+}
+
+input:focus {
+    border-color: #00a8cc;
+    box-shadow: 0 0 8px rgba(0,168,204,0.5);
+    outline: none;
+}
+
+.date-group {
+    display: flex;
+    gap: 10px;
+}
+
+.date-group input {
+    width: 100%;
+}
+
+.btn {
+    width: 100%;
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff8787;
+}
+
+.button-group {
+    width: 380px;
+    margin: 20px auto;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-secondary {
+    flex: 1;
+    text-align: center;
+    background-color: #00a8cc;
+    color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #007f99;
+}

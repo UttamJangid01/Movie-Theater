@@ -1,0 +1,98 @@
+body {
+    background: #0d1b2a;
+    font-family: Arial;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.ticket {
+    width: 420px;
+    background: linear-gradient(135deg, #d4a848, #f7e7a1, #d4a848);
+    border-radius: 18px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    margin: 40px;
+}
+
+.inner {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 14px;
+    backdrop-filter: blur(3px);
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+    color: #4b3200;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #4b3200;
+}
+
+.label {
+    opacity: 0.75;
+}
+
+.value {
+    font-weight: 800;
+}
+
+/* -------- Seat Table Styling -------- */
+
+.seat-box {
+    margin: 12px 0 18px 0;
+}
+
+.seat-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.20);
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.seat-table th {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 8px;
+    color: #4b3200;
+    text-align: left;
+    font-weight: 700;
+}
+
+.seat-table td {
+    padding: 7px 8px;
+    color: #4b3200;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.seat-table tr:last-child td {
+    border-bottom: none;
+}
+
+.cut-line {
+    margin: 20px 0;
+    border-top: 2px dashed rgba(75, 50, 0, 0.4);
+}
+
+.footer {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+    color: #5a3d00;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}

@@ -1,0 +1,195 @@
+/* ===== PREMIUM THEATER SEAT SELECTION – Enhanced Version ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #e0e1dd;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(27, 38, 59, 0.4);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Movie Title */
+.movie-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 20px 0 40px;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(255, 107, 107, 0.4);
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ff6b6b, #ffa500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Section titles */
+.section-title {
+    margin: 35px 0 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ff6b6b;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #ff6b6b, transparent);
+    border-radius: 3px;
+}
+
+/* Screen */
+.screen {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto 50px;
+    padding: 20px 0;
+    background: linear-gradient(180deg, #24344d, #1b263b);
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    border-radius: 70% 70% 15% 15% / 120% 120% 15% 15%;
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.7),
+        0 -10px 30px rgba(255, 255, 255, 0.1) inset,
+        0 0 60px rgba(255, 107, 107, 0.15);
+    transform: perspective(800px) rotateX(-12deg);
+    border: 3px solid #334566;
+    position: relative;
+}
+
+.screen::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(90deg, transparent 20%, rgba(255,255,255,0.05) 50%, transparent 80%);
+}
+
+/* Rows */
+.rows {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    margin-bottom: 14px;
+    padding: 0 20px;
+}
+
+/* Seats */
+.seat {
+    background: linear-gradient(145deg, #1b263b, #162033);
+    color: #e0e1dd;
+    border: none;
+    padding: 14px 18px;
+    min-width: 48px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow:
+        0 4px 8px rgba(0, 0, 0, 0.4),
+        0 2px 4px rgba(0, 0, 0, 0.3) inset;
+    position: relative;
+}
+
+.seat:hover {
+    background: linear-gradient(145deg, #415a77, #2a3e5e);
+    color: #fff;
+    transform: translateY(-4px) scale(1.1);
+    box-shadow:
+        0 12px 20px rgba(65, 90, 119, 0.6),
+        0 0 20px rgba(255, 107, 107, 0.3);
+}
+
+.seat.selected {
+    background: linear-gradient(145deg, #ff6b6b, #e65b5b);
+    color: white;
+    box-shadow:
+        0 0 25px rgba(255, 107, 107, 0.8),
+        0 8px 16px rgba(255, 107, 107, 0.4);
+    transform: translateY(-4px) scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container { padding: 15px; }
+    .movie-title { font-size: 28px; }
+    .seat { padding: 12px 14px; font-size: 13px; }
+    .screen { letter-spacing: 4px; font-size: 14px; }
+}
+
+/* ===================================================
+     CUSTOM BLUE / YELLOW OUTLINE BUTTONS (Back & Pay)
+   =================================================== */
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 25px;
+}
+
+/* Base Button */
+.btn-custom {
+    border: 2px solid #0d6efd;
+    background: transparent;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .25s ease;
+}
+
+/* Blue → Yellow on hover */
+.btn-blue {
+    color: #0d6efd;
+    border-color: #0d6efd;
+}
+.btn-blue:hover {
+    background: #ffd43b;
+    color: #0b3a66;
+    border-color: #ffd43b;
+    transform: translateY(-2px);
+}
+
+/* Yellow → Blue on hover */
+.btn-yellow {
+    color: #ffd43b;
+    border-color: #ffd43b;
+}
+.btn-yellow:hover {
+    background: #0d6efd;
+    color: white;
+    border-color: #0d6efd;
+    transform: translateY(-2px);
+}
